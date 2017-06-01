@@ -7,7 +7,8 @@ long long lcm_naive(int a, int b) {
 
   return (long long) a * b;
 }
-int gcd_fast (int a, int b){
+
+long long gcd_fast (long long a, long long b){
     
     if (b ==0) {
         return a;
@@ -17,15 +18,15 @@ int gcd_fast (int a, int b){
     
 }
 
-long long int lcm_fast(int a, int b){
+long long int lcm_fast(long long a, long long b){
 
-     int gcd = gcd_fast(a,b);
+     long long gcd = gcd_fast(a,b);
     long long product  = a*b;
     return (product/gcd);
 
 }
 int main() {
-  int a, b;
+  long long a, b;
   std::cin >> a >> b;
   //std::cout << lcm_naive(a, b) << std::endl;
   std::cout << lcm_fast (a, b) <<std::endl;
