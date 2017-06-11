@@ -1,1 +1,1 @@
-#This is a repo to brush up my algorithm and data structure knowledge from Coursea course
+This is a repo to brush up my algorithm and data structure knowledge and skills from Coursea course. You can see examples of different naive algorithms and efficient ones and a way of thinking how to optimize them.
