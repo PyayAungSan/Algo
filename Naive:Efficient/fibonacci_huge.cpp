@@ -20,6 +20,14 @@
 
 using namespace std;
 
+void print_vec(const vector<long long>& vec){
+
+    cout<<"print vec "<< endl;
+    for (long long i:vec) cout << i ;
+    cout <<endl;
+
+}
+
 vector<long long> Pisano_period(long long m){
     
     
@@ -36,11 +44,13 @@ vector<long long> Pisano_period(long long m){
         ++i;
         }
     
+    cout << "i is  "<<i <<" value of i "<<pattern[i]<<endl;
     //By the time we end the loop, we already added up 0, 1. So , we gotta remove it
+  
     
-    pattern.erase (pattern.begin()+(i-1),pattern.begin()+i);
-    
-    return pattern;
+    pattern.erase (pattern.begin()+(i -2) ,pattern.begin()+i);
+   
+     return pattern;
 
 }
 
