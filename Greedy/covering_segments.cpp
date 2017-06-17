@@ -21,7 +21,7 @@ vector<int> optimal_points(vector<Segment> &segments) {
   
   
   sort(segments.begin(), segments.end(), less_than_end());
-  //asending sorted array let the first item a safe choice
+  //asending sorted array let the first end item a safe choice
     
   int point = segments[0].end;
   points.push_back(point);
